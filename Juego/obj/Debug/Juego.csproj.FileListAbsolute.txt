@@ -11,3 +11,4 @@ C:\Users\Eduardo\Documents\Visual Studio 2013\Projects\HUM\Juego\Juego\obj\Debug
 C:\Users\Eduardo\Documents\Visual Studio 2013\Projects\HUM\Juego\Juego\obj\Debug\Juego.csproj.GenerateResource.Cache
 C:\Users\Eduardo\Documents\Visual Studio 2013\Projects\HUM\Juego\Juego\obj\Debug\Juego.exe
 C:\Users\Eduardo\Documents\Visual Studio 2013\Projects\HUM\Juego\Juego\obj\Debug\Juego.pdb
+C:\Users\Eduardo\Documents\Humanidades\Juego\bin\Debug\Juego.exe.config
