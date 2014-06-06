@@ -1,0 +1,31 @@
+﻿<Window x:Class="Juego.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Canvas>
+            <Canvas.Background>
+                <ImageBrush ImageSource="Image/Background.jpg" AlignmentX="Right" AlignmentY="Bottom" Stretch="None"/>
+            </Canvas.Background>
+            <Ellipse Height="250" Width="250" Canvas.Left="133" Canvas.Top="30">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="p2" ImageSource="Image/p2.png"/>
+                </Ellipse.Fill>
+                <Ellipse.RenderTransform>
+                    <RotateTransform x:Name="TransRotate11" CenterX="125" CenterY="125"/>
+                </Ellipse.RenderTransform>
+                <Ellipse.Triggers>
+                    <EventTrigger RoutedEvent="Button.MouseLeftButtonDown">
+                        <BeginStoryboard>
+                            <Storyboard x:Uid="s1">
+                                <DoubleAnimation Storyboard.TargetName="TransRotate11" Storyboard.TargetProperty="Angle" By="360" Duration="0:0:0:.9" RepeatBehavior="9x" FillBehavior="Stop" />
+                            </Storyboard>
+
+
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Ellipse.Triggers>
+            </Ellipse>
+        </Canvas>
+    </Grid>
+</Window>
